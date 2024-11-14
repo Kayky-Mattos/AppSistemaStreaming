@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="771dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Retângulo com bordas arredondadas -->
+        <LinearLayout
+            android:id="@+id/rectangleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profileretangulo"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Título Playlists -->
+            <TextView
+                android:id="@+id/titlePlaylists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playlists"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Label Criar Nova Playlist -->
+            <TextView
+                android:id="@+id/labelCreatePlaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Criar Nova Playlist"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Lista de Playlists -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/playlistsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="584dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/profileretangulo"
+            android:padding="20dp" />
+    </LinearLayout>
+
+</FrameLayout>

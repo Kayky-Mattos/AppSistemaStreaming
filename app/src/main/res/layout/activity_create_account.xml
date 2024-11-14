@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/indexCreateAccount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    tools:context=".CreateAccount">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="Crie uma nova conta"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/retangulo"
+        android:hint="Nome"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/retangulo"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextConfirmarSenha"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/retangulo"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCriarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/retangulo"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextConfirmarSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCriarConta"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF3131"
+        android:text="Criar Conta"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+</LinearLayout>

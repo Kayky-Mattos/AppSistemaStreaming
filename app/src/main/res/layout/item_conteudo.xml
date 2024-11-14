@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/titlePlaylists"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Titulo do conteúdo"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/deleteButtonContent"
+        android:layout_width="42dp"
+        android:layout_height="54dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete Conteúdo"
+        android:src="@drawable/baseline_delete_24" />
+
+</LinearLayout>

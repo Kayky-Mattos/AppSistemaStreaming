@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Imagem da série -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/seriesImage"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:contentDescription="series_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+    <!-- Título da série -->
+
+    <!-- Ícone de mais opções -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView6"
+        android:layout_width="23dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="127dp"
+        app:layout_constraintEnd_toEndOf="@+id/seriesImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/moreOptions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/background_more_vert"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/seriesTitle"
+        android:layout_width="148dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="175dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seriesImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/seriesImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/moreOptions"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="130dp"
+        android:contentDescription="more_options"
+        android:src="@drawable/ic_more_vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/seriesImage"
+        app:layout_constraintTop_toTopOf="@+id/seriesImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
